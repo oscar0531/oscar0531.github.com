@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#242529;}
+#header{position:relative;width:100%;height:730px; overflow: hidden;}
+#header .msg{ width:68px; height: 68px; background: url(../images/msg.png) no-repeat; margin: 20px;}
+#header .bg{ width:436px; height: 272px; background: url(../images/bg1.png) no-repeat; margin-top: 90px; margin-left: 100px;}
+#header .name{position: absolute; opacity:0;filter:alpha(opacity=0);width:254px; height: 188px; background: url(../images/name.png) no-repeat; top: 350px; left: 334px; padding-top: 50px;}
+#header .name h3{ height: 30px; font: 16px/30px "Arial";letter-spacing: 2px; text-align: center; color: #0ff9b7;}
+#header .name h3 a{color:#0ff9b7; }
+#header .name h3 a:hover{text-decoration: underline; color: #948663;}
+#header .show{position: absolute; width:484px; height: 194px; background:#1f2024; top: 0; left: 714px; }
+#header .show .left-img{width:205px; height: 194px;background: url(../images/left-img.png) no-repeat;  }
+#header .show .right-text {width: 279px; padding-top: 30px;}
+#header .show .right-text p,#header .show .right-text span{font:12px/20px "Arial"; color: #0ff9b7; letter-spacing: 4px; text-align: center; }
+#header .show .right-text h3{font:20px/80px "\5FAE\8F6F\96C5\9ED1"; color: #0ff9b7; margin-left: 62px; letter-spacing: 8px;}
+#header .show .right-text span{ display:block;text-align: right; padding: 10px 10px 0 0;}
+#header .show .right-text span a{color: #0ff9b7;}
+#header .show-tel{ position: absolute;  bottom:20px; left:800px;width:103px; height: 103px; background: url(../images/show.png) no-repeat;}
+#header .show-tel div{position:absolute; left:-201px; bottom:-10px;width:180px; height: 0px;overflow:hidden;padding-left: 20px;line-height: 30px;  color:#0ff9b7; }
+#header .show-tel div.mask{background: #fff; opacity: .2;filter:alpha(opacity:20); }
+#header .show-tel div.over{border: 1px solid #b1b2b4; border-radius: 4px;}
+#header .creavity{ position: absolute; left:800px; top:420px;width:0px; height: 45px; background: url(../images/creavity.png) no-repeat; }
+#content {position:relative;width: 100%;height: 500px; margin-top: 50px;}
+#content h2{ position:absolute;left:50%; top:-100px;margin-left: -230px; font:60px/60px "\5FAE\8F6F\96C5\9ED1"; opacity:0;filter:alpha(opacity=0);text-align: center; color: #b1b2b4; letter-spacing: 10px; margin-bottom: 20px;}
+#content .skillicon{position:absolute;width:100%; height:100px;top:80px;left:50%; margin-left:-450px;opacity:0;filter:alpha(opacity=0);}
+#content .skillicon li{float: left; margin: 50px 100px;}
+#content .skillicon li {width:100px;height:100px; background: url(../images/icon.png) no-repeat;}
+#content .skillicon li.first {background-position: 0 0; }
+#content .skillicon li.cen {background-position: 0 -113px;}
+#content .skillicon li.last {background-position: 0 -229px;}
+#content .skillicon li.first.active {background-position: -118px 0; }
+#content .skillicon li.cen.active {background-position: -118px -113px;}
+#content .skillicon li.last.active {background-position: -118px -229px;}
+#content .skill {position:absolute; left:270px;top:320px;height: 200px;opacity:0;filter:alpha(opacity=0);}
+#content .skill li {float: left; margin:0 50px;}
+#content .skill li dl{width: 200px; color: #b1b2b4;margin-top: 10px;}
+#content .skill li dl dt{font-size: 20px; line-height: 30px;}
+#content .skill li dl dd{font-size: 14px; line-height: 20px; color: #fff;}
+#aboutme{width:100%;height:280px; background: #fff; text-align: center; overflow: hidden;}
+#aboutme h3{ font-size: 20px; color:#b1b2b4; line-height: 60px; letter-spacing: 10px;}
+#aboutme p{font-size: 14px; margin-top:10px; color: #000; }
+#aboutme .logoes{height:100px; width: 100%; background: url(../images/logos.png) no-repeat;margin: 30px 100px;}
+#forjob { position: relative;width:100%;height:500px;letter-spacing: 4px;-border: 1px solid #b1b2b4;}
+#forjob img{position:absolute;opacity:0;filter:alpha(opacity=0);width:100%;}
+#forjob h2{position:absolute;left: 100px;top:20px; color: #242529; }
+#forjob .joblist{position: absolute; top:200px; left: 100px;}
+#forjob .joblist li{ height: 30px;font-size: 20px; color:#242529; margin-bottom: 20px;}
+#forjob .joblist li.active{color: #0ff9b7;}
+#hobby{position: relative;width:100%;overflow: hidden; height:550px;}
+#hobby .hobby-box{ position:absolute;width:330px; height: 420px; background:url(../images/hobby.png) no-repeat; top:80px; left: 0px;}
+#hobby .hobby-list{ position:relative;margin:100px 0 0 550px;}
+#hobby .hobby-list li{position:absolute;top:500px;overflow: hidden;color: #fff; margin-bottom: 40px;width: 460px;}
+#hobby .hobby-list li div{width: 56px; height: 56px; border:3px solid #0ff9b7;font-size: 26px; line-height: 56px; text-align: center; margin-right: 20px;}
+#hobby .hobby-list li span{display: inline-block; width: 100px; font-size: 16px; font-weight: bold; color:#0ff9b7; }
+#hobby .hobby-list li h3{display: inline-block; font-size: 16px; padding-top: 10px;}
+#hobby .hobby-list li p{padding-top: 10px;}
+#touchme{ margin-top: 50px;letter-spacing: 4px;}
+#touchme .s-contact{ position: relative; width:50%; height: 450px; background: #eaeaea;}
+#touchme .s-contact h3,#touchme .forwork h3{font-size: 18px;margin-left:45px; line-height: 140px; color: #acbfd2; }
+#touchme .s-contact .contactlist{margin-left:45px;font-size: 26px;}
+#touchme .s-contact .contactlist li{width:120px;line-height: 50px;}
+#touchme .s-contact .contactlist li a{ color: #acbfd2;}
+#touchme .s-contact .contactlist li.active a{color: #fff;}
+#touchme .s-contact div{position:absolute; top: 40px; left:280px;width:270px; height: 0px;}
+#weixin{ background: url(../images/weixin.png) no-repeat;}
+#qq{ background: url(../images/qq.png) no-repeat;}
+#touchme .forwork{width:50%; height:450px; background: #0c1922; }
+#touchme .forwork img{ margin-left: 130px; margin-top:-30px; border: 1px solid #acbfd2;}
+#touchme .forwork div{width:80%; margin:30px auto 0; color:#acbfd2; line-height: 20px; }
+#touchme .forwork div span{text-decoration: line-through;}
+#footer{ position: relative;width:100%; height: 152px; margin-top: 30px; background: url(../images/footer.png) no-repeat;}
+#footer a{position: absolute;width:70px; height:74px; top:20px; right: 50px; background:url(../images/up.png) no-repeat; }
+#footer span{position: absolute;top:110px; right: 50px; color: #948663;}
