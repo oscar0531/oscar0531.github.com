@@ -49,7 +49,7 @@ body{background:#242529;}
 #hobby{position: relative;width:100%;overflow: hidden; height:550px;}
 #hobby .hobby-box{ position:absolute;width:330px; height: 420px; background:url(../images/hobby.png) no-repeat; top:80px; left: 0px;}
 #hobby .hobby-list{ position:relative;margin:100px 0 0 550px;}
-#hobby .hobby-list li{position:absolute;top:500px;overflow: hidden;color: #fff; margin-bottom: 40px;width: 460px;}
+#hobby .hobby-list li{position:absolute;top:500px;overflow: hidden;color: #fff; margin-bottom: 40px;width: 500px;}
 #hobby .hobby-list li div{width: 56px; height: 56px; border:3px solid #0ff9b7;font-size: 26px; line-height: 56px; text-align: center; margin-right: 20px;}
 #hobby .hobby-list li span{display: inline-block; width: 100px; font-size: 16px; font-weight: bold; color:#0ff9b7; }
 #hobby .hobby-list li h3{display: inline-block; font-size: 16px; padding-top: 10px;}
