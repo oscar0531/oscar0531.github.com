@@ -180,7 +180,7 @@ var Tween = {
 				if(readyState=="complete"){
 					fn && fn();
 				}
-			})
+			});
 		}
 	}
 	function getEle(str,aParent){
@@ -208,7 +208,7 @@ var Tween = {
 					}
 					break;
 				default:
-					 if(/[0-9a-z]+#[0-9a-z\-_]+/.test(str)){//li#div1
+					 if(/[0-9a-z]+#[0-9a-z\-_]+/.test(str)){
 					 	var arrName=str.split("#");
 					 	var aEle=aParent[i].getElementsByTagName(arrName[0]);
 					 	for (var i = 0; i < aEle.length; i++) {
@@ -216,7 +216,7 @@ var Tween = {
 					 			aChild.push(aEle[i]);
 					 		}
 					 	}
-					 }else if (/[0-9a-z]+\.[0-9a-z\-_]+/.test(str)) {//li.box
+					 }else if (/[0-9a-z]+\.[0-9a-z\-_]+/.test(str)) {
 					 	var arrName=str.split(".");
 					 	var aEle=aParent[i].getElementsByTagName(arrName[0]);
 					 	for (var i = 0; i < aEle.length; i++) {
@@ -224,7 +224,7 @@ var Tween = {
 					 			aChild.push(aEle[i]);
 					 		}
 					 	}
-					 }else if(/[0-9a-z]+\[\w+=\w+\]/.test(str)){//input[type=button]
+					 }else if(/[0-9a-z]+\[\w+=\w+\]/.test(str)){
 					 	var arrName=str.split(/\[|=|\]/g);
 					 	var aEle=aParent[i].getElementsByTagName(arrName[0]);
 					 	for (var i = 0; i < aEle.length; i++) {
@@ -232,7 +232,7 @@ var Tween = {
 					 			aChild.push(aEle[i]);
 					 		}
 					 	}
-					 }else if(/[0-9a-z]+:\w+/.test(str)){//伪类 li:first   li:eq(index)
+					 }else if(/[0-9a-z]+:\w+/.test(str)){
 					 	var arrName=str.split(/:|\(|\)/);
 					 	var aELe=aParent[i].getElementsByTagName(arrName[0]);
 					 	switch(arrName[1]){
@@ -240,7 +240,7 @@ var Tween = {
 					 			aChild.push(aELe[0]);
 					 			break;
 					 		case "last":
-					 			aChild.push(aELe[aELe.length-1])
+					 			aChild.push(aELe[aELe.length-1]);
 					 			break;
 					 		case "eq":
 					 			aChild.push(aELe[arrName[2]]);
@@ -319,7 +319,7 @@ var Tween = {
 			for (var i = 0; i < this.elements.length; i++) {
 				addEvent(this.elements[i],sEv,fn);
 			}
-		}
+		};
 	})
 	function appendStr(oParent,str){
 		var oTmp = document.createElement("div");
@@ -461,7 +461,7 @@ var Tween = {
 		}else{
 			this.addClass(sClass);
 		}
-	}
+	};
 	myJQuery.prototype.mouseenter = function(fn){
 		for(var i = 0; i < this.elements.length; i++){
 			addEvent(this.elements[i],"mouseover",function(ev){
@@ -506,7 +506,7 @@ var Tween = {
 	myJQuery.prototype.appendTo = function(str){
 		var aParent = getEle(str);
 		for(var i = 0; i < aParent.length; i++){
-			appendStr(aParent[i],this.domString)
+			appendStr(aParent[i],this.domString);
 		} 
 	};
 	myJQuery.prototype.bind = function(sEv,fn){

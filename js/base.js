@@ -1,4 +1,4 @@
-$(function(){
+$(function(){"use strict"
 	setTimeout(function(){
 		$("#header .creavity").animate({width:430},{duration:1000});
 	},1000);
